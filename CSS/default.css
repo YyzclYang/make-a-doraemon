@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.codeWrapper {
+  padding: 0 16px;
+  flex: 1;
+  height: 50%;
+}
+#code {
+  height: 100%;
+  overflow: auto;
+}
+.doraemonWrapper {
+  flex: 1;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .eye::before {
+  content: '';
+  display: block;
+}
+.head .eye::after {
+  content: '';
+  display: block;
+}
+.head .nose::after {
+  content: '';
+  display: block;
+}
+.head .mouth::before {
+  content: '';
+  display: block;
+}
+.head .mouth::after {
+  content: '';
+  display: block;
+}
+.head .beard::before {
+  content: '';
+  display: block;
+}
+.head .beard::after {
+  content: '';
+  display: block;
+}
+.head .bell::before {
+  content: '';
+  display: block;
+}
+.head .bell::after {
+  content: '';
+  display: block;
+}
+.action {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.action button {
+  padding: 8px 10px;
+  margin: 8px 40px 8px 8px;
+  border: none;
+}
+.action button:focus {
+  outline: none;
+}
+.action button.active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
