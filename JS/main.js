@@ -249,6 +249,13 @@ function paintDoraemon(preCode, code, fn) {
 }
 function replay() {
   duration = 50;
+  setTimeout(() => {
+    $('.action > button:nth-child(2)')
+      .addClass('active')
+      .siblings('.active')
+      .removeClass('active');
+  }, 100);
+
   document.querySelector('#code').innerHTML = '';
   document.querySelector('#styleTag').innerHTML = '';
   stop = paintDoraemon('', code, () => {});
