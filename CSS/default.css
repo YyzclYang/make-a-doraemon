@@ -84,3 +84,14 @@ body {
 .action button.active {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
+@media (min-width: 769px) {
+  body {
+    flex-direction: row;
+  }
+  .codeWrapper {
+    height: 100%;
+  }
+  .doraemonWrapper {
+    height: 100%;
+  }
+}
